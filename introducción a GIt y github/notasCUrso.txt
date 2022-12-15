@@ -1,2 +1,14 @@
-git init                                 //Iniciar repositorio
-git status                               //Saber estatus del proyecto
+-----------------Identificación-------------
+git config --global user.email "you@example.com"          //Indico mi correo
+git config --global user.name "Your Name"                 //Indico mi usuario
+
+
+git init                                                  //Iniciar repositorio
+git status                                                //Saber estatus del proyecto
+_______________Siempre se ejecuta git add antes de commit____________________________________
+
+git add historia.txt                                      //Agregar historia.txt al repositorio (No se ha subido, solo guardado)
+git add .                                                 //Agregar todos los cambios en cuanquier archivo
+
+git rm historia.txt |                                     //Sacar historia.txt del repositorio 
+git commit -m "Este es el primer commit del curso"        //Hace el commit con un mensaje
