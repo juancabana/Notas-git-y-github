@@ -1,0 +1,82 @@
+ls                                                  // Lista los archivos y directorios que hay dentro de la carpeta
+ls -l                                               //Lista todos los archivos y sus caracteristicas 
+ls -lh                                              /Lista todos los archivos y sus caracteristicas de modo más facil de entender
+ls -la                                              //Lista todos los archivos y sus caracteristicas incluyendo los archivos ocultos
+ls -lS                                              //Lista todos los archivos y los ordena por tamaño
+ls -lr                                              //Lista todos los archivos y los ordena por tamaño al revés
+tree                                                //Lista todos los archivos ordenados como arbol genealógico
+tree -L                                             //Lista todos los archivos ordenados como arbol genealógico - Profundiza solo en 2 niveles
+
+mkdir nameDirectory - mkdir "name directory"        /Crea un nuevo directorio
+touch nameArchive.txt - mkdir "nameArchive.txt"     //Crea un nuevo archivo
+mkdir dir1 dir2 dir3                                //Crea varios directorios
+touch index.js index.html index.txt                 //Crea varios archivos
+cp index.html index_Copiado.html                    //Copia archivo o directorio y lo renombra
+cp index.html index_Copiado.html                    //Copia archivo o directorio y lo renombra
+mv index_Copiado.html ..                            //Mueve archivo o directorio hacia la ruta que le indiques
+mv dir1 dir2                                        //Mueve dir1 hacia dentro de dir2
+
+
+rm index_Copiado.html                               //Elimina el archivo o directorio VACIO seleccionado
+rm -i index_Copiado.html                            //Elimina el archivo seleccionado con opción interactiva
+rm -rf dir1                                         //Elimina el directorio seleccionado sin importar si está lleno o no
+rm -ri dir1                                         //Elimina el directorio seleccionado con opción interactiva
+
+head archive.js                                     //Muestra las primeras 10 lineas de cada archivo
+head archive.js -n 20                               //Muestra las primeras 20 lineas de cada archivo
+tail archive.js                                     //Muestra las ultimas 10 lineas de cada archivo
+tail archive.js -n 20                               //Muestra las ultimas 20 lineas de cada archivo
+
+less index.js                                       //lee todo el archivo
+/Hola                                               //Busca la palabra Hola en el archivo
+q                                                   //Salir de esa funcionalidad
+
+open index.js                                       //Abre el archivo con el editor de código predeterminado
+nautilus Descktop                                   //Abre el directorio en el explorador de archivos
+
+type cd                                             //Te indica el tipo de comando que le envíes
+help cd                                             //Temuestra todo lo que puedes hacer con ese comando
+man mkdir                                           //Te muestra el manual de uso de un comando
+info mkdir                                          //Te muestra el manual de uso de un comando más resumido
+whatis mkdir                                        //Descripción corta de un comando
+
+ls *.txt                                            //Muestra todos los archvos que terminan en .txt
+ls datos                                            //Muestra todos los que digan datos y todos los que tengan varios caracteres después
+ls datos?                                           //Muestra todos los archivos que tengan "datos" al principio y que después tengan solo uncaracter
+ls datos???                                         //Muestra todos los archivos que tengan "datos" al principio y que después tengan tres caracteres
+ls [[:upper:]]*                                     //Muestra todos los archivos que tengan "datos" al principio y que después tengan tres caracteres
+
+--------------------Tipos de archivos--------------------
+_____________________________________________________________________________________________________________________
+   Atributo   |                                   Tipo de archivo
+      -       |    Es un archivo normal, como un documento de texto, una foto, un video, etc.
+      d       |    Por directory es un directorio
+      l 	  |    Es un enlace simbólico. Es algo que veremos en próximas clases
+      b       |    Bloque especial, son archivos que manejan información para el sistema, como la información de un disco duro
+
+--------------------Tipo de permiso-----------------------
+__________________
+Símbolo	Significado	Permiso
+r	readable	Significa que puede leer su contenido
+w	writable	El usuario puede editar el contenido del archivo, también el nombre y los permisos
+x	executable	El usuario puede ejecutarlo en caso de que sea un programa
+
+
+
+d	rwx	r-x	r-x
+Esto es un directorio	owner	group	world
+El dueño puede leer, escribir y ejecutar	El grupo puede leer y ejecutar	Los demás pueden leer y ejecutar
+
+-----------------------Tipo de modo------------------------
+
+___________________________________
+   Dueño   |   Grupo   |   World   |
+------------------------------------
+    rwx    |    r-x    |    r-x    |
+------------------------------------
+ 1 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 1 |
+ -----------------------------------
+ Símbolo	Significado	Permiso
+r	readable	Significa que puede leer su contenido
+w	writable	El usuario puede editar el contenido del archivo, también el nombre y los permisos
+x	executable	El usuario puede ejecutarlo en caso de que sea un programa
