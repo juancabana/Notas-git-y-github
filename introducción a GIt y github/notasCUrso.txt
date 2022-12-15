@@ -22,3 +22,5 @@ git diff af4a0eb957fb01e316d39ee398a52e031f574f73 bee93dd6dba29b96fdf70311ef34b8
 _______________________________________Versiones anteriores__________________________________________
 
 git reset af4a0eb957fb01e316d39ee398a52e031f574f73 --hard                                   //Volvemos a la versión anterior
+git checkout af4a0eb957fb01e316d39ee398a52e031f574f73 historia.txt                          //Cambiar a esta versión el archivo temporalmente
+git checkout master historia.txt                                                            //VOlver a la version master del archivo
