@@ -1,14 +1,24 @@
 -----------------Identificación-------------
-git config --global user.email "you@example.com"          //Indico mi correo
-git config --global user.name "Your Name"                 //Indico mi usuario
+git config --global user.email "you@example.com"                                            //Indico mi correo
+git config --global user.name "Your Name"                                                   //Indico mi usuario
 
 
-git init                                                  //Iniciar repositorio
-git status                                                //Saber estatus del proyecto
-_______________Siempre se ejecuta git add antes de commit____________________________________
+git init                                                                                    //Iniciar repositorio
+git status                                                                                  //Saber estatus del proyecto
+_______________________________Siempre se ejecuta git add antes de commit_________________________________
 
-git add historia.txt                                      //Agregar historia.txt al repositorio (No se ha subido, solo guardado)
-git add .                                                 //Agregar todos los cambios en cuanquier archivo
+git add historia.txt                                                                        //Agregar historia.txt al repositorio (No se ha subido, solo guardado)
+git add .                                                                                   //Agregar todos los cambios en cuanquier archivo
 
-git rm historia.txt |                                     //Sacar historia.txt del repositorio 
-git commit -m "Este es el primer commit del curso"        //Hace el commit con un mensaje
+git rm historia.txt |                                                                       //Sacar historia.txt del repositorio 
+git commit -m "Este es el primer commit del curso"                                          //Hace el commit con un mensaje
+git log historia.txt                                                                        //Ver historia del archivo o carpeta
+git show historia.txt                                                                       //Ver cambios sobre un archivo o carpeta
+
+________________________________________Comparación de commits__________________________________________
+
+git diff af4a0eb957fb01e316d39ee398a52e031f574f73 bee93dd6dba29b96fdf70311ef34b8d546835fce  //Compara dos versiones de commit
+
+_______________________________________Versiones anteriores__________________________________________
+
+git reset af4a0eb957fb01e316d39ee398a52e031f574f73 --hard                                   //Volvemos a la versión anterior
