@@ -24,3 +24,7 @@ _______________________________________Versiones anteriores_____________________
 git reset af4a0eb957fb01e316d39ee398a52e031f574f73 --hard                                   //Volvemos a la versión anterior
 git checkout af4a0eb957fb01e316d39ee398a52e031f574f73 historia.txt                          //Cambiar a esta versión el archivo temporalmente
 git checkout master historia.txt                                                            //VOlver a la version master del archivo 
+
+_____________________________________RAMAS________________________________________________________________
+git branch nombreNuevaRama                                                                  //Crear nueva rama
+git checkout ramaDiferente                                                                  //Cambia de rama
