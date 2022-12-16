@@ -31,4 +31,4 @@ git branch nombreNuevaRama                                                      
 git checkout ramaDiferente                                                                  //Cambia de rama
 
 ----------MERGE------- //Para hacer merge debo estar en la rama master
-git merge cabecera                                                                          //Fusiona la rama master con la rama alternativa
+git merge cabecera                                                                          //Fusiona la cabecera actual con la que se le indique, en este caso está en master
