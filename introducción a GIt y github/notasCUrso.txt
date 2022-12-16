@@ -37,3 +37,4 @@ git merge cabecera                                                              
 _____________________________________REPOSITORIO REMOTO____________________________________________________
 git remote add origin https://github.com/juancabana/Notas-git-y-github.git                  //Agrega un origen remoto de nuestro repositorio
 git pull origin main --allow-unrelated-histories                                            //Traer lo que hay en el repo remoto
+git push origin main                                                                        //Subir al servidor y la rama principal todo lo que se ha hecho
