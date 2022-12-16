@@ -34,6 +34,7 @@ git checkout master historia.txt                                                
 _____________________________________RAMAS________________________________________________________________
 git branch -m new-name                                                                      //Renombrar rama
 git branch                                                                                  //Muestra todas las ramas
+git show-branch --all                                                                       //Muestra todas las ramas con detalles
 git branch nombreNuevaRama                                                                  //Crear nueva rama
 git checkout ramaDiferente                                                                  //Cambia de rama
 
