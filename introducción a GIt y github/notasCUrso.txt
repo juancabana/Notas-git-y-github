@@ -17,6 +17,7 @@ git show historia.txt                                                           
 git log --all --graph --decorate --oneline                                                  //Ver toda la historia en fráficos
 git tag -a v0.2 -m "Resultado de las primeras clases del curso" b292305                     //Agregar tag
 git show-ref --tags                                                                         //Mostrar tags
+git tag -d nameTag                                                                          //Eliminar tag
 
 
 
