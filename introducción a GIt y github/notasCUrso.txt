@@ -14,6 +14,11 @@ git rm historia.txt |                                                           
 git commit -m "Este es el primer commit del curso"                                          //Hace el commit con un mensaje
 git log historia.txt                                                                        //Ver historia del archivo o carpeta
 git show historia.txt                                                                       //Ver cambios sobre un archivo o carpeta
+git log --all --graph --decorate --oneline                                                  //Ver toda la historia en fráficos
+git tag -a v0.2 -m "Resultado de las primeras clases del curso" b292305                     //Agregar tag
+git show-ref --tags                                                                         //Mostrar tags
+
+
 
 ________________________________________Comparación de commits__________________________________________
 
