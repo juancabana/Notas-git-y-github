@@ -29,4 +29,4 @@ _____________________________________RAMAS______________________________________
 git branch nombreNuevaRama                                                                  //Crear nueva rama
 git checkout ramaDiferente                                                                  //Cambia de rama
 
-----------MERGE------- //Para hacer merge debo estar en la rama alternativa, no en master
+----------MERGE------- //Para hacer merge debo estar en la rama master
