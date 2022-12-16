@@ -28,3 +28,5 @@ git checkout master historia.txt                                                
 _____________________________________RAMAS________________________________________________________________
 git branch nombreNuevaRama                                                                  //Crear nueva rama
 git checkout ramaDiferente                                                                  //Cambia de rama
+
+----------MERGE------- //Para hacer merge debo estar en la rama alternativa, no en master
