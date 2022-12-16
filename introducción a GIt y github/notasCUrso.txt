@@ -29,6 +29,6 @@ _____________________________________RAMAS______________________________________
 git branch                                                                                  //Muestra todas las ramas
 git branch nombreNuevaRama                                                                  //Crear nueva rama
 git checkout ramaDiferente                                                                  //Cambia de rama
-git merge cabecera                                                                          //Fusiona la rama master con la rama alternativa
 
 ----------MERGE------- //Para hacer merge debo estar en la rama master
+git merge cabecera                                                                          //Fusiona la rama master con la rama alternativa
