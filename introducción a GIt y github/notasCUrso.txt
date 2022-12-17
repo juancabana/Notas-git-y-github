@@ -1,0 +1,52 @@
+-----------------Identificación-------------
+git config --global user.email "you@example.com"                                            //Indico mi correo
+git config --global user.name "Your Name"                                                   //Indico mi usuario
+
+
+git init                                                                                    //Iniciar repositorio
+git status                                                                                  //Saber estatus del proyecto
+_______________________________Siempre se ejecuta git add antes de commit_________________________________
+
+git add historia.txt                                                                        //Agregar historia.txt al repositorio (No se ha subido, solo guardado)
+git add .                                                                                   //Agregar todos los cambios en cuanquier archivo
+
+git rm historia.txt |                                                                       //Sacar historia.txt del repositorio 
+git commit -m "Este es el primer commit del curso"                                          //Hace el commit con un mensaje
+git log historia.txt                                                                        //Ver historia del archivo o carpeta
+git show historia.txt                                                                       //Ver cambios sobre un archivo o carpeta
+git log --all --graph --decorate --oneline                                                  //Ver toda la historia en fráficos
+git tag -a v0.2 -m "Resultado de las primeras clases del curso" b292305                     //Agregar tag
+git show-ref --tags                                                                         //Mostrar tags
+git tag -d nameTag                                                                          //Eliminar tag
+
+
+
+________________________________________Comparación de commits__________________________________________
+
+git diff af4a0eb957fb01e316d39ee398a52e031f574f73 bee93dd6dba29b96fdf70311ef34b8d546835fce  //Compara dos versiones de commit
+
+_______________________________________Versiones anteriores__________________________________________
+
+git reset af4a0eb957fb01e316d39ee398a52e031f574f73 --hard                                   //Volvemos a la versión anterior
+git checkout af4a0eb957fb01e316d39ee398a52e031f574f73 historia.txt                          //Cambiar a esta versión el archivo temporalmente
+git checkout master historia.txt                                                            //VOlver a la version master del archivo 
+
+_____________________________________RAMAS________________________________________________________________
+git branch -m new-name                                                                      //Renombrar rama
+git branch                                                                                  //Muestra todas las ramas
+git show-branch --all                                                                       //Muestra todas las ramas con detalles
+git branch nombreNuevaRama                                                                  //Crear nueva rama
+git checkout ramaDiferente                                                                  //Cambia de rama
+
+----------MERGE------- //Para hacer merge debo estar en la rama master
+git merge cabecera                                                                          //Fusiona la cabecera actual con la que se le indique, en este caso está en master
+
+_____________________________________REPOSITORIO REMOTO____________________________________________________
+git remote add origin https://github.com/juancabana/Notas-git-y-github.git                  //Agrega un origen remoto de nuestro repositorio
+git pull origin main --allow-unrelated-histories                                            //Traer lo que hay en el repo remoto
+git push origin main                                                                        //Subir al servidor y la rama principal todo lo que se ha hecho
+
+______________________________________AUTENTICACIÓN__________________________________________________________
+ssh-keygen -t rsa -b 4096 -C "juand.cabanat@unac.edu.co"                                    //Cear la llave ssh
+ssh-add ~/.ssh/id_rsa                                                                       //Agregar la llave ssh a mi os
+git remote set-url origin git@github.com:juancabana/Notas-git-y-github.git                  //Cambiar la url del proyecto a una SSH
