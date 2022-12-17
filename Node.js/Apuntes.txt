@@ -1,0 +1,6 @@
+-Para no tener que guardar cambios a cada rato, 
+se puede usar un paquete de node que se llama "nodemon"
+
+-Cuando uso nodemon y me sale error es porque no estoy ejecutando la powershell como administrador
+Para solucionar eso se usa el siguiente comando
+'Set-ExecutionPolicy RemoteSigned -Scope CurrentUser'
