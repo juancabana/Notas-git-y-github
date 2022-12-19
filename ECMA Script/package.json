@@ -1,0 +1,17 @@
+{
+  "name": "ecma-script",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "JavaScript",
+    "ECMAScript",
+    "Node",
+    "npm"
+  ],
+  "author": "Juan cabana <juand.cabanat@unac.edu.co>",
+  "license": "MIT"
+}
