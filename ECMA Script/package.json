@@ -13,5 +13,6 @@
     "npm"
   ],
   "author": "Juan cabana <juand.cabanat@unac.edu.co>",
-  "license": "MIT"
+  "license": "MIT",
+  "type": "module"
 }
