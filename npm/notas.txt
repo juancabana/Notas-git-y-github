@@ -1,0 +1,26 @@
+npm install dependencyName              //Instalar dependencia 
+npm i dependencyName                    //Instalar dependencia 
+
+npm i dependencyName --save-dev         //Instalar dependencia solo en entorno de desarrollo
+npm i dependencyName -D                 //Instalar dependencia solo en entorno de desarrollo
+
+npm i dependencyName --save             //Instalar dependencia para entorno de producción
+npm i dependencyName -S                 //Instalar dependencia para entorno de producción
+
+npm i -g dependencyName                 //Instalar dependencia de modo global (Sistema operativo)
+
+npm list                                //Mostrar todos los paquetes que se han agregado al proyecto
+npm list -g                             //Mostrar todos los paquetes que se han agregado al proyecto de forma global
+
+npm i dependencyName -o                 //Instalar de manera opcional la dependencia
+npm i react-dom --dry-run               //Simular instalación sin agregar al proyecto
+npm i json-server@0.15.0                //Instalar una versión especifica de un paquete
+npm i json-server@latest                //Instalar la ultima versión
+
+npm i                                   //Instala todas las dependencias agregadas en el package.json
+
+-------------NPX-----------
+
+npx create-react-app my-app             //Ejecuta una acción sin instalar el paquete en la máquina
+npm outdate                             //Muestra las actualizaciones que hay de cada dependencia
+

@@ -1,0 +1,25 @@
+{
+  "name": "npm-init",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "node",
+    "npm"
+  ],
+  "author": "Juan Cabana <juand.cabanat@unac.edu.co>",
+  "license": "MIT",
+  "dependencies": {
+    "json-server": "^0.15.0",
+    "moment": "^2.29.4",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.30.0"
+  }
+}

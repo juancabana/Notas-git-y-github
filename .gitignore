@@ -1,3 +1,4 @@
+node_modules
 ts-app/node_modules
 react-typescript-task-app/node_modules
 react-typescript-task-app - Copy/node_modules
@@ -8,3 +9,4 @@ Node.js/packages/utiles/node_modules
 Node.js/packages/npm/node_modules
 Fundamentos de javascript/node_modules
 cursoTypescript/node_modules
+npm/npm-init/node_modules

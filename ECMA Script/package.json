@@ -14,5 +14,8 @@
   ],
   "author": "Juan cabana <juand.cabanat@unac.edu.co>",
   "license": "MIT",
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  }
 }
