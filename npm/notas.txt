@@ -1,6 +1,8 @@
 npm install dependencyName              //Instalar dependencia 
 npm i dependencyName                    //Instalar dependencia 
 
+npm uninstall dependencyName            //Eliminar dependencia 
+
 npm i dependencyName --save-dev         //Instalar dependencia solo en entorno de desarrollo
 npm i dependencyName -D                 //Instalar dependencia solo en entorno de desarrollo
 
@@ -19,8 +21,13 @@ npm i json-server@latest                //Instalar la ultima versión
 
 npm i                                   //Instala todas las dependencias agregadas en el package.json
 
+npm audit //Ver que es lo que está pasando en los errores
+
+
 -------------NPX-----------
 
 npx create-react-app my-app             //Ejecuta una acción sin instalar el paquete en la máquina
 npm outdate                             //Muestra las actualizaciones que hay de cada dependencia
+
+
 
